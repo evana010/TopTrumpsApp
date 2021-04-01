@@ -1,0 +1,109 @@
+body
+{
+  font-family: 'Dela Gothic One', cursive;
+  margin: 0;
+  background-image: url("Comics.jpg");
+    height: 1200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.title_text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size:120px;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow:
+						8px 8px red,
+						20px 20px #000000;
+
+  }
+.image_container {
+    background-image: url("Comics.jpg");
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+.button {
+    background-color: red;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    left: 38%;
+    position: inherit;
+    animation:bouncy 3s infinite linear;
+    position:relative;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 10px 10px #000000;;
+  }
+  @keyframes bouncy {
+  0%{top:80%}
+  40%{top:80%}
+  43%{top:78%}
+  46%{top:80%}
+  48%{top:79%}
+  50%{top:80%}
+  100%{top:80%;}
+  }
+.button:hover {
+  color: lightgray;
+}
+
+.card{
+    width: 40%;
+    margin: 5%;
+    margin-left:30%;
+    background-image: linear-gradient(to bottom right, white, red, darkred);
+    color: white;
+    font-size: x-large;
+    border-radius: 5%;
+    text-align: center;
+    box-shadow: 15px 15px #000000;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.drop_down {
+    height: 10%;
+    width: 20%;
+    margin-bottom: 20%;
+    margin-left:40%;
+    background: red;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 15px 15px #000000;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 5%
+}
+
+.text {
+color: white;
+    background: red;
+    font-size: x-large;
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 10px 10px #000000;
+}

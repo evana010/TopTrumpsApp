@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Trumps Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div class="text">
+        <span style="float:left; width:30%"> User Score = {{ user_score }}</span>
+        <span style="text-align:center;">10 Points Needed To Win!</span>
+        <span style="float:right; width:30%">Computers Score = {{ computer_score }}</span>
+</div>
+    <div class="card">
+        <h2>{{ name }}</h2>
+        <img src='{{ image }}' width="50%">
+        <p>
+            Intelligence : {{ intelligence }} <hr>
+        Strength : {{ strength }} <hr>
+        Speed : {{ speed }} <hr>
+        Durability : {{ durability }} <hr>
+        Power : {{ power }} <hr>
+        Combat : {{ combat }} <hr>
+        </p>
+
+        <form id="dropdown" action="/request_form" method="post">
+            <label>Choose a Stat:</label>
+            <select name="dropdown">
+                <option disabled selected value>Select an Option</option>
+                <option value="Intelligence">Intelligence</option>
+                <option value="Strength">Strength</option>
+                <option value="Speed">Speed</option>
+                <option value="Durability">Durability</option>
+                <option value="Power">Power</option>
+                <option value="Combat">Combat</option>
+            </select>
+            </form>
+        <button type="submit" form="dropdown">Submit</button>
+            </div>
+</body>
