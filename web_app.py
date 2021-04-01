@@ -83,4 +83,4 @@ def lose():
     return render_template('/you_lose.html')
 
 
-app.run(debug=True)
+app.run()
