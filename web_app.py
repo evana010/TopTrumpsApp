@@ -82,5 +82,5 @@ def win():
 def lose():
     return render_template('/you_lose.html')
 
-
-app.run()
+if __name__ == "__main__":
+    app.run()
